@@ -1,0 +1,126 @@
+.task-list {
+    padding: 0;
+}
+
+/* 统计卡片 */
+.stats-row {
+    margin-bottom: 16px;
+}
+
+.stat-card {
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-card .stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-card .stat-label {
+    font-size: 14px;
+    color: #999;
+    margin-top: 4px;
+}
+
+.stat-total .stat-value { color: #722ed1; }
+.stat-completed .stat-value { color: #52c41a; }
+.stat-pending .stat-value { color: #faad14; }
+.stat-streak .stat-value { color: #f5222d; }
+.streak-unit { font-size: 16px; font-weight: normal; }
+
+/* 进度卡片 */
+.progress-card {
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+/* 分区标题 */
+.task-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 16px;
+    padding-left: 12px;
+    border-left: 4px solid #722ed1;
+}
+
+/* 任务卡片 */
+.task-card {
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.task-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.task-pending { border-top: 3px solid #faad14; }
+.task-submitted { border-top: 3px solid #1677ff; }
+.task-approved { border-top: 3px solid #52c41a; }
+
+.task-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.task-icon {
+    font-size: 28px;
+}
+
+.task-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.task-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.task-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.task-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-category {
+    font-size: 12px;
+    color: #999;
+}
+
+.task-points {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5222d;
+}
+
+.task-deadline {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}

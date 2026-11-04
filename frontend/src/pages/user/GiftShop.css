@@ -1,0 +1,220 @@
+.gift-shop {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 积分面板 */
+.shop-balance-card {
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #722ed1 0%, #eb2f96 100%);
+    color: #fff;
+    border: none;
+}
+
+.shop-balance-card .ant-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+}
+
+.balance-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.balance-icon {
+    font-size: 40px;
+    color: #ffd666;
+}
+
+.balance-label {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.balance-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd666;
+}
+
+.balance-right .ant-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.balance-right .ant-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    color: #fff;
+}
+
+/* 分区标题 */
+.gift-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0 16px;
+    padding-left: 12px;
+    border-left: 4px solid #722ed1;
+}
+
+.gift-count {
+    font-size: 13px;
+    font-weight: normal;
+    color: #999;
+    margin-left: 8px;
+}
+
+/* 礼品卡片 */
+.gift-card {
+    position: relative;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.gift-card:not(.gift-out):hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(114, 46, 209, 0.2);
+}
+
+.gift-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+
+.gift-icon-wrap {
+    width: 80px;
+    height: 80px;
+    margin: 12px auto 16px;
+    background: linear-gradient(135deg, #f9f0ff 0%, #fff0f6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift-icon {
+    font-size: 40px;
+}
+
+.gift-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.gift-desc {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.6;
+    min-height: 42px;
+    margin-bottom: 12px;
+    padding: 0 8px;
+}
+
+.gift-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+    margin-bottom: 8px;
+}
+
+.gift-points {
+    font-size: 15px;
+    font-weight: bold;
+    color: #f5222d;
+}
+
+.gift-stock {
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* 状态 */
+.gift-poor {
+    opacity: 0.75;
+}
+
+.gift-poor .gift-icon-wrap {
+    filter: grayscale(0.6);
+}
+
+.gift-out {
+    opacity: 0.5;
+}
+
+.gift-out .gift-icon-wrap {
+    filter: grayscale(1);
+}
+
+/* 兑换弹窗 */
+.redeem-modal {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.redeem-modal h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.redeem-gift-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.redeem-cost {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.redeem-cost span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f5222d;
+}
+
+.redeem-after {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 24px;
+}
+
+.redeem-after span {
+    font-weight: bold;
+    color: #52c41a;
+}
+
+.redeem-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .gift-card {
+        text-align: left;
+    }
+
+    .gift-icon-wrap {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 12px;
+    }
+
+    .gift-icon {
+        font-size: 30px;
+    }
+}
